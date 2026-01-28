@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# AMEZIANE-STORE CLIENT (God-Tier Edition) 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The official **React Frontend** for the Ameziane Store project. This application consumes the **AMEZIANE-STORE-BACKEND** API to provide a seamless, high-performance shopping experience designed for gamers.
 
-## Available Scripts
+## 🌌 Visual Identity: "Cyberpunk God-Tier"
 
-In the project directory, you can run:
+This frontend has been engineered with a custom **Carbon & Neon Design System**:
 
-### `npm start`
+* **Deep Void Background**: A pure tech-gradient (`#050510`) replacing standard white/gray backgrounds.
+* **Holographic UI**: Glassmorphism panels with neon cyan/purple borders (`1px solid #00f3ff`).
+* **HUD Typography**: `Orbitron` (Headers) and `Rajdhani` (Body) fonts for maximum readability and style.
+* **Interactive Elements**:
+  * **Glow Effects**: Hover states trigger neon pulses.
+  * **Custom Modals**: "Access Authorized" cyberpunk alerts instead of browser defaults.
+  * **Smooth UX**: Auto-scroll to top on pagination.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Artifact Search & Filtering
 
-### `npm test`
+* **Real-Time Search**: Filter artifacts by name instantly.
+* **Advanced Filters**: Narrow down by **Category** (e.g., "Consoles", "Armes") and **Max Price**.
+* **Reset**: Smart reset logic when changing filters.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Pagination System
 
-### `npm run build`
+* **server-side Pagination**: Displays 6 items per page.
+* **Smart Navigation**: "Previous/Next" buttons with auto-scroll and visual disable states.
+* **Mobile Stack**: Pagination controls adapt to vertical stacking on mobile devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Management Interface
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Add Artifact**: A dedicated sidebar form (`AddComp`) to upload new products.
+* **File Upload**: Custom styled "Choose File" button matching the neon theme.
+* **Feedback**: Cyberpunk Modal system for success/error messages.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Installation
 
-### `npm run eject`
+```bash
+# 1. Clone the repository
+git clone https://github.com/amezianeomar/AMEZIANE-STORE-CLIENT.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 2. Install dependencies
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 3. Start the development server
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application will launch at `http://localhost:3000` and connect to the Laravel API at `http://localhost:8000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📱 Responsiveness
 
-## Learn More
+* **Desktop**: Dashboard layout with Sidebar + Grid.
+* **Mobile**: Single-column HUD layout with optimized padding and safe-area insets.
+* **Tablet**: Adaptive grid columns.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+**Lead Tech / QA**: AMEZIANE OMAR ASSISTANT
+*Code Audited & Compliant: 2026-01-28*
