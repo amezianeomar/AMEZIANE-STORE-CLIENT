@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../App.css';
 
+const API_URL = 'https://ameziane-store-backend.vercel.app';
+
 function AddComp({ onProductAdded }) { // Optional: callback to refresh list
     const [nom, setNom] = useState('');
     const [prix, setPrix] = useState('');
@@ -24,7 +26,7 @@ function AddComp({ onProductAdded }) { // Optional: callback to refresh list
         }
 
         try {
-            const res = await axios.post('http://localhost:8000/api/products', formData, {
+            const res = await axios.post(`${API_URL}/api/products`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

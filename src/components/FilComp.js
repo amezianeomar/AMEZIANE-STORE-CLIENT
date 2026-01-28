@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../App.css';
 
+const API_URL = 'https://ameziane-store-backend.vercel.app';
+
 function FilComp() {
     // State for filters
     const [search, setSearch] = useState('');
@@ -23,7 +25,7 @@ function FilComp() {
             max_price: priceMax
         };
 
-        axios.get(`http://localhost:8000/api/products`, { params })
+        axios.get(`${API_URL}/api/products`, { params })
             .then(res => {
                 // Laravel paginate() wraps items in 'data' and provides meta in top level
                 setProducts(res.data.data);
