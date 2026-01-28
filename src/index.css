@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap');
+
+:root {
+  --bg-void: #050510;
+  --bg-panel: rgba(20, 20, 35, 0.85);
+  --neon-cyan: #00f3ff;
+  --neon-purple: #bc13fe;
+  --neon-red: #ff0055;
+  --text-main: #e0faff;
+  --text-muted: #8b9bb4;
+
+  --font-display: 'Orbitron', 'Segoe UI', sans-serif;
+  --font-body: 'Rajdhani', 'Segoe UI', sans-serif;
+
+  --border-neon: 1px solid var(--neon-cyan);
+  --shadow-neon: 0 0 10px rgba(0, 243, 255, 0.3), 0 0 20px rgba(0, 243, 255, 0.1);
+  --shadow-purple: 0 0 10px rgba(188, 19, 254, 0.3);
+
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-void);
+  color: var(--text-main);
+  background-image:
+    linear-gradient(rgba(5, 5, 16, 0.9), rgba(5, 5, 16, 0.95)),
+    url('https://res.cloudinary.com/demo/image/upload/v1688629559/cld-sample-4.jpg');
+  /* Generic cyberpunk-ish placeholder or mesh */
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+.app-title,
+.section-title,
+button {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+input,
+select,
+textarea {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neon-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan);
+}
