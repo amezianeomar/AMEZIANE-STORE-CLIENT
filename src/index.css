@@ -26,10 +26,16 @@ body {
   color: var(--text-main);
   background-image:
     linear-gradient(rgba(5, 5, 16, 0.9), rgba(5, 5, 16, 0.95)),
-    url('https://res.cloudinary.com/demo/image/upload/v1688629559/cld-sample-4.jpg');
-  /* Generic cyberpunk-ish placeholder or mesh */
-  background-size: cover;
-  background-attachment: fixed;
+    url('https://res.cloudinary.com/demo/image/upload/v1688629559/sample.jpg');
+  /* Generic flower/nature or better: use a solid tech gradient if no reliable image */
+  /* Actually let's use a pure CSS pattern to be safe and "God-Tier" */
+  background-image:
+    linear-gradient(rgba(5, 5, 16, 0.92), rgba(5, 5, 16, 0.98)),
+    url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg');
+  /* Better yet, let's use the one from the demo that is usually techy or just a dark gradient if we want to be safe */
+
+  background-image:
+    linear-gradient(30deg, #050510 0%, #1a1a2e 100%);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
